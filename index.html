@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="font-mulish">
+    <header class="lg:mx-16 px-16">
+        <div class="navbar bg-base-100 mt-6">
+            <div class="navbar-start">
+                <img src="images/logo.png" alt="image of logo">
+            </div>
+            <div class="navbar-end flex gap-2  ">
+                <button class="btn btn-ghost btn-circle border-2 border-slate-400 tooltip
+            hidden lg:inline-block " data-tip="HOME">
+                    <i class="fa-sharp fa-solid fa-house"></i>
+                </button>
+                <button class="btn btn-ghost btn-circle border-2 border-slate-400 tooltip
+            hidden lg:inline-block" data-tip="Ediat">
+                    <i class="fa-solid fa-pen-to-square "></i>
+                </button>
+                <button class="btn btn-ghost btn-circle border-2 border-slate-400 tooltip
+            hidden lg:inline-block" data-tip="Add user">
+                    <i class="fa-solid fa-user-plus"></i>
+                </button>
+
+                <button class="btn btn-ghost btn-circle border-2 border-slate-400 tooltip
+            hidden lg:inline-block" data-tip="Flag">
+                    <i class="fa-regular fa-flag "></i>
+                </button>
+                <button class="block">
+                    <a class="btn btn-active bg-[#797DFC]  text-white">Sign In</a>
+                </button>
+
+            </div>
+
+        </div>
+    </header>
+    <main class="lg:mx-16 lg:mt-10 px-16">
+        <section id="container" class="Banner relative">
+            <div
+                class="bg-[#12132D] bg-[url('./images/bgbanner.png')] bg-cover bg-no-repeat  items-center p-7 md:p-14 lg:p-20 flex flex-col md:flex-row md:gap-10  lg:gap-20 rounded-xl">
+                <div class="w-full md:w-[60%]">
+                    <h1 class=" text-2xl text-white md:text-3xl lg:text-6xl font-extrabold ">Welcome to the <span
+                            class="text-[#797dfcb7]">ReTro</span> Forum</h1>
+                    <p class="text-xl py-10 text-white font-medium">Share your favorite opinion and win and wp <br>
+                        forum
+                        coffee mug!</p>
+                    <div
+                        class="bg-white w-[90%] rounded-full flex gap-3 mb-10  md:mb-0 lg:gap-5 justify-between lg:justify-around">
+                        <input id="input-value" type="text" placeholder="Type here"
+                            class="input mt-1 rounded-full w-[100%] max-w-xs focus:outline-none focus:border-none" />
+                        <button onclick="" id="Search"
+                            class="btn  w-[30%] m-1 bg-[#797DFC] rounded-full text-sm  lg:text-xl font-bold text-white px-6">Search</button>
+                    </div>
+                </div>
+                <!-- banner write site -->
+                <div class="p-10 bg-white rounded-xl w-full md:w-[40%]">
+                    <div class="flex justify-between gap-3 mt-3">
+                        <h2 class="text-xl md:text-sm  lg:text-2xl font-medium">Registered Users</h2>
+                        <h2 class="text-xl md:text-sm  lg:text-2xl font-medium">01</h2>
+
+                    </div>
+                    <div class="flex justify-between gap-3 mt-3">
+                        <h2 class="text-xl md:text-sm  lg:text-2xl font-medium">Forum</h2>
+                        <h2 class="text-xl md:text-sm  lg:text-2xl font-medium">05</h2>
+
+                    </div>
+                    <div class="flex justify-between gap-3 mt-3">
+                        <h2 class="text-xl md:text-sm  lg:text-2xl font-medium">Topics</h2>
+                        <h2 class="text-xl md:text-sm  lg:text-2xl font-medium">01</h2>
+
+                    </div>
+                    <div class="flex justify-between gap-3 mt-3">
+                        <h2 class="text-xl  md:text-sm lg:text-2xl font-medium">Replies</h2>
+                        <h2 class="text-xl md:text-sm  lg:text-2xl font-medium">01</h2>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="Discuss w-full mb-5">
+            <!--contect comment start-->
+            <div class="conteinar h-[200px] flex flex-col gap-6 justify-center items-center text-center">
+                <p class="text-4xl font-bold">Let's Discuss</p>
+                <p> Yes, you can run unit tests and view the results directly within the app. The <br>
+                    integrated testing features allow for a streamlined .</p>
+            </div>
+            <!--main section-->
+            <div class="main flex lg:flex-row flex-col gap-2 ">
+                <div class="lg:w-[60%] w-full flex flex-col gap-6 add items-center justify-center">
+                    <p><span class="loading loading-spinner loading-lg"></span></p>
+                </div>
+                <div
+                    class="lg:w-[40%] w-full flex flex-col bg-slate-300 items-center p-7 gap-4 rounded-lg h-auto conent">
+
+                    <div class="flex-row flex w-full  justify-between ">
+                        <p class="text-xl font-bold">Title</p>
+                        <p><i class="fa-solid fa-check-double text-green-600"></i><span> Mark as read (<span
+                                    class="row">4</span>)</span></p>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <section class="S-banner mb-4">
+            <div class="hero lg:h-96 bg-slate-900 rounded-2xl p-9 ">
+                <div class="hero-content flex-col items-center justify-center lg:flex-row-reverse">
+                    <img src="images/joinforum.png" class="w-72 rounded-lg object-contain" />
+                    <div class="text-white">
+                        <h1 class="text-5xl font-bold">Join Our Forum</h1>
+                        <p class="py-6">Share your favorite opinion and win and wp forum coffee mug! Yes, you can <br>
+                            run unit tests and view the results directly within the app. </p>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="last mb-4 w-full">
+            <div class="conteinar h-[200px] flex flex-col gap-6 justify-center items-center text-center">
+                <p class="text-4xl font-bold">Latest Posts</p>
+                <p> Yes, you can run unit tests and view the results directly within the app. The <br>
+                    integrated testing features allow for a streamlined .</p>
+            </div>
+            <div class="flex gap-2 show flex-col lg:flex-row sm:items-center overflow-hidden">
+                <!--1st card-->
+                <div class="card w-96 bg-base-300 shadow-xl">
+                    <figure class="p-4"><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="text-lg"><i class="fa-regular fa-calendar-check"></i> <span> 29 January 2024</span>
+                        </h2>
+                        <p class="text-lg font-bold">What will a mars habitat force that <br>
+                            impact in our daily life!!!</p>
+                        <p>Yes, you can run unit tests and view the
+                            results directly within the app. </p>
+                        <div>
+                            <div class="flex m-3 gap-3">
+                                <div class="avatar">
+                                    <div class="w-16 rounded-full">
+                                        <img
+                                            src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                    </div>
+                                </div>
+
+                                <div class="content flex flex-col">
+                                    <p class="font-bold">Cameron Williamson</p>
+                                    <p>Unknown</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--2nd card-->
+                <div class="card w-96 bg-base-300 shadow-xl">
+                    <figure class="p-4"><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-lg"><i class="fa-regular fa-calendar-check"></i> <span> 29 January 2024</span>
+                        </h2>
+                        <p class="text-lg font-bold">What will a mars habitat force that <br>
+                            impact in our daily life!!!</p>
+                        <p>Yes, you can run unit tests and view the
+                            results directly within the app. </p>
+                        <div>
+                            <div class="flex m-3 gap-3">
+                                <div class="avatar">
+                                    <div class="w-16 rounded-full">
+                                        <img
+                                            src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                    </div>
+                                </div>
+
+                                <div class="content flex flex-col">
+                                    <p class="font-bold">Cameron Williamson</p>
+                                    <p>Unknown</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--3rd card-->
+                <div class="card w-96 bg-base-300 shadow-xl">
+                    <figure class="p-4"><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-lg"><i class="fa-regular fa-calendar-check"></i> <span> 29 January 2024</span>
+                        </h2>
+                        <p class="text-lg font-bold">What will a mars habitat force that <br>
+                            impact in our daily life!!!</p>
+                        <p>Yes, you can run unit tests and view the
+                            results directly within the app. </p>
+                        <div>
+                            <div class="flex m-3 gap-3">
+                                <div class="avatar">
+                                    <div class="w-16 rounded-full">
+                                        <img
+                                            src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                    </div>
+                                </div>
+
+                                <div class="content flex flex-col">
+                                    <p class="font-bold">Cameron Williamson</p>
+                                    <p>Unknown</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer class=" p-10 bg-slate-200 w-full">
+        <div class="flex flex-col justify-center items-center">
+          <img src="images/logo.png" class="lg:w-24 w-16">
+          <p class="text-slate-400 text-md text-center">Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a <br>
+            piece of classical Latin literature from 45 BC</p>
+        </div>
+    
+    
+        <div class="flex justify-center p-5 text-black  gap-4">
+          <i class="fa-brands fa-twitter "></i>
+          <i class="fa-brands fa-facebook "></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-github "></i>
+        </div>
+        <hr class="w-2/4 bg-black">
+        <p class="text-slate-500 text-center">2017, All Rights Reserved</p>
+    
+      </footer>
+      <script src="script.js"></script>
+</body>
+
+</html>
